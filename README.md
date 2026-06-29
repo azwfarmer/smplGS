@@ -1,6 +1,6 @@
-# SMPL-sampled Gaussian Splatting (`human/`)
+# SMPL-sampled Gaussian Splatting
 
-<video src="demo.mp4" width="100%" controls></video>
+![demo](demo.gif)
 
 A from-scratch, readable PyTorch implementation of an **animatable human avatar**: 3D
 Gaussians are sampled on the SMPL body mesh, fitted as surface-hugging disks, articulated
