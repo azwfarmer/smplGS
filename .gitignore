@@ -1,0 +1,58 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Testing / coverage ----
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Training / experiment outputs ----
+# Checkpoints (train.py save_checkpoint -> ckpt_*.pt) and weights
+*.pt
+*.pth
+*.ckpt
+ckpt_*.pt
+# Per-iteration previews (train.py save_preview -> preview_*.png)
+preview_*.png
+# Rendered Gaussian point clouds
+*.ply
+# Logging / experiment trackers
+runs/
+logs/
+outputs/
+wandb/
+events.out.tfevents.*
+
+# ---- Datasets / model assets (large; kept outside the repo) ----
+# SMPL body models and ZJU-MoCap data live under cfg.smpl_model_path / cfg.data_root.
+# Ignore them if ever copied locally.
+*.npz
+*.pkl
+data/
+datasets/
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

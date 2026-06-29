@@ -1,0 +1,17 @@
+# Core. torch must be a CUDA build whose CUDA major matches the nvcc used to
+# build the rasterizer below. On this box: torch 2.4.1+cu121 (driver 12.2,
+# nvcc 12.2 from ~/local/cuda-12.2.2).
+torch>=2.2
+numpy
+pillow
+imageio
+imageio-ffmpeg
+smplx
+trimesh
+# CUDA rasterizer (the standard 3DGS splatter). Install with submodules + a
+# matching CUDA toolkit on PATH (CUDA_HOME), e.g.:
+#   git clone --recursive https://github.com/graphdeco-inria/diff-gaussian-rasterization
+#   TORCH_CUDA_ARCH_LIST=8.0 pip install ./diff-gaussian-rasterization
+diff-gaussian-rasterization
+# Optional: only needed to load an original SMPL .pkl (prefer .npz)
+# chumpy
