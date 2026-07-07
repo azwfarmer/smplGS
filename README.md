@@ -8,10 +8,6 @@ with the skeleton (LBS) plus a non-rigid MLP, coloured with view+pose-dependent 
 and trained against multi-view images with adaptive densification. A simplified, transparent
 take on *3DGS-Avatar* (Zheng et al., CVPR 2024).
 
-**Read [`WRITEUP.md`](WRITEUP.md) first** — it derives every equation (representation,
-surface sampling, LBS, EWA splatting + compositing, the rasterizer gradients, SH + pose
-colour, losses, and adaptive density control) and the full pipeline.
-
 ## Implementation
 - Gaussians sampled on the SMPL surface (vertices + area-weighted barycentric face samples),
   initialised as flat tangent disks with neighbour-spaced anisotropic scale.
